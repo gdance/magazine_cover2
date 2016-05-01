@@ -36,7 +36,7 @@ body
 .image-with-caption
 {
   display: table;
-  margin-bottom: 200px;
+  /** margin-bottom: 200px; **/
   margin-left: 0;
   margin-right: 0;
   margin-top: 1em;
@@ -44,6 +44,7 @@ body
 }
 .image-with-caption img
 {
+  width: 150px;
 }
 .image-with-caption p
 {
