@@ -59,27 +59,40 @@ article {
 /*This chould really be a <figure> with a span classed .caption*/
 .image-with-caption {
   display: table;
-  /** margin-bottom: 200px; **/
+  margin-bottom: 200px;
   margin-left: 0;
   margin-right: 0;
   margin-top: 1em;
   width: 1px;
 }
-.image-with-caption img
-{
-  width: 150px;
-}
-.image-with-caption p
-{
+
+
 .image-with-caption p {
   font-weight: bold;
   width: 100%;
 }
-.short-info {
 
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 64px;
 }
-.author {
 
+.picture-word {
+  display: block;
+  line-height: 0.5;
+  margin-bottom: 0.3em;
+}
+
+.short-info {
+  font-family: 'Times', serif;
+  font-weight: lighter;
+  margin-bottom: 0.5em;
+}
+
+.author {
+  font-family: sans-serif;
+  text-decoration: overline;
+  margin-bottom: 0.5em;
 }
 
 /*See you can target the first paragraph */
@@ -87,7 +100,7 @@ article {
 .article-body p:first-child:first-letter {
   color: black;
   float: left;
-  font-family: Georgia;
+  font-family: Impact;
   font-size: 75px;
   line-height: 60px;
   padding-left: 3px;
@@ -95,10 +108,20 @@ article {
   padding-top: 4px;
 }
 
+.article-body p {
+  column-count: 3;
+}
+
+.article-body {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+}
+
 /* Use time instead of .date*/
 .date {
 
 }
+
 .footer {
   clear: both;
 }
@@ -116,4 +139,8 @@ article {
 
 .float-right {
   float: right;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
 }
